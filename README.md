@@ -1,7 +1,7 @@
 # Unity WebGL with Firebase Integration
 
 ## Introduction
-This project demonstrates how to integrate Unity WebGL with Firebase to create a web-based application. The application leverages Unity for building interactive WebGL content and Firebase for backend services, including real-time data handling, user authentication, and cloud storage.
+This project demonstrates how to integrate Unity WebGL with Firebase to create a web-based application. The application leverages Unity for building interactive WebGL content and Firebase for backend services, including real-time data handling.
 
 ## Features
 - **Connecting Unity WebGL with Firebase**: Seamless integration of Firebase services with Unity WebGL builds.
