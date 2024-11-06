@@ -1,0 +1,5 @@
+{
+    "EXPORTED_FUNCTIONS": [
+        "saveDataToFirestore"
+    ]
+}
