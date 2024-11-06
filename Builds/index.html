@@ -37,21 +37,19 @@
       measurementId: "G-K8Q53BFMEP"
     };
 
-      // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
       const db = firebase.firestore();
 
-      // Function to save data to Firestore
       function saveDataToFirestore(collectionName, docId, dataJson) {
         const data = JSON.parse(dataJson);
         return db.collection(collectionName).doc(docId).set(data)
             .then(() => {
                 console.log("Document successfully written!");
-                return true;  // Indicate success
+                return true; 
             })
             .catch((error) => {
                 console.error("Error writing document: ", error);
-                return false;  // Indicate failure
+                return false; 
             });
       }
 

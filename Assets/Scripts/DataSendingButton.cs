@@ -15,21 +15,18 @@ public class DataSendingButton : MonoBehaviour
     {
         string docId = DateTime.UtcNow.ToString("yyyyMMddHHmmssfff");
 
-        // Create sample data
         SampleData sampleData = new SampleData
         {
             message = "Testing? Do we succeed?"
         };
 
-        // Convert to JSON using JsonUtility
         string jsonData = JsonUtility.ToJson(sampleData);
-        
-        // Send data to WebGL
+
         WebGLFirebaseHandler.saveDataToFirestore("userData", docId, jsonData);
     }
 }
 
-// Class to hold your data (Serializable)
+//class to hold your data (Serializable)
 [System.Serializable]
 public class SampleData
 {
